@@ -25,13 +25,16 @@ LANDMARKS = ["Centropolis", "Place Bell", "Cosmodôme", "Centre de la nature", "
              "Bois de l'Équerre", "Quartier Laval", "Pont Viau", "Papineau-Leblanc", "Médéric-Martin",
              "Cartier", "De la Concorde", "Îles-Laval", "Île Bigras", "Île Jésus", "Armand-Frappier",
              "Collège Montmorency", "Parc de la Rivière-des-Mille-Îles", "Marcel-Dutil"]
-SEARCHES = ["Laval Quebec", "Laval Québec", "Île Jésus Laval"] + [f"{s} Laval Quebec" for s in SECTORS] + \
-           [f"{l} Laval" for l in LANDMARKS]
+SEARCHES = [f"{s} Laval Quebec" for s in SECTORS] + [f"{l} Laval" for l in LANDMARKS] + \
+           ["Laval Quebec park", "Laval Quebec river", "Laval Quebec autumn", "Laval Quebec winter", "Laval Quebec street",
+            "Laval Quebec houses", "Laval Quebec skyline", "Laval Quebec aerial", "Vieux Sainte-Rose", "Laval Quebec bridge",
+            "Laval Québec parc", "Laval Québec rivière", "Laval Quebec", "Laval Québec", "Île Jésus Laval"]
 OK_LICENSE = re.compile(r"^(cc0|public domain|pd|cc[- ]by(-sa)?[ -]?\d|cc[- ]by(-sa)?$|cc-by(-sa)?-\d)", re.I)
 BAD_LICENSE = re.compile(r"\b(nc|nd|non-?commercial|no ?deriv|fair use)\b", re.I)
 SKIP_WORDS = re.compile(r"\b(map|carte|logo|plan|blason|coat of arms|armoiries|diagram|flag|drapeau|chart|graph|"
                         r"signature|seal|sceau|location|localisation|svg|screenshot|document|scan|poster|affiche|"
-                        r"france|mayenne)\b", re.I)
+                        r"france|mayenne|p[ée]nitenci\w*|prison|d[ée]tention|federal|f[ée]d[ée]ral|[ée]cran|screen|accident|fire|incendie|"
+                        r"funeral|fun[ée]raire|cemetery|cimeti[èe]re|police|crash|protest|manif\w*)\b", re.I)
 QC_HINT = re.compile(r"(qu[ée]bec|\bqc\b|canada|île j[ée]sus|ile jesus|montr[ée]al|mille[- ][iî]les|"
                      + "|".join(re.escape(x) for x in SECTORS + LANDMARKS) + r")", re.I)
 
@@ -105,13 +108,14 @@ def commons_subcats(root, depth=2, cap=60):
 
 def commons_candidates():
     pages = []
+    for s in SEARCHES:
+        pages += commons_files_from(dict(generator="search", gsrsearch=s, gsrnamespace=6, gsrlimit=25, _cap=25))
+    print(f"commons: {len(pages)} pages from searches", flush=True)
     cats = commons_subcats("Category:Laval, Quebec")
     print(f"commons: {len(cats)} categories", flush=True)
     for i, cat in enumerate(cats):
         pages += commons_files_from(dict(generator="categorymembers", gcmtitle=cat, gcmtype="file", gcmlimit=50, _cap=50))
         if i % 10 == 0: print(f"  cat {i}/{len(cats)} pages so far {len(pages)}", flush=True)
-    for s in SEARCHES:
-        pages += commons_files_from(dict(generator="search", gsrsearch=s, gsrnamespace=6, gsrlimit=25, _cap=25))
     print(f"commons: {len(pages)} raw pages", flush=True)
     res = {}
     for p in pages:
@@ -179,8 +183,28 @@ def main():
     from PIL import Image
     cands = {**commons_candidates(), **openverse_candidates()}
     print(f"{len(cands)} candidates, {len(have)} already in bank", flush=True)
-    added = 0
+    # diversity: group near-duplicates (same series/stem), max 3 per group, max 12 per sector/landmark,
+    # then round-robin across groups so one big series can't take over the bank
+    def stem(t):
+        return re.sub(r"[\d_()\-–.,]+|panoramio|img|dsc|jpe?g", " ", t.lower()).split()[:4].__str__()
+    per_tag = {}
+    for p0 in manifest["photos"]:
+        for t0 in p0["sectors"] + p0["landmarks"]:
+            per_tag[t0] = per_tag.get(t0, 0) + 1
+    groups = {}
     for pid, c in cands.items():
+        groups.setdefault(stem(c["title"]), []).append((pid, c))
+    order, rnd = [], 0
+    while any(len(g) > rnd for g in groups.values()) and rnd < 3:
+        for g in groups.values():
+            if len(g) > rnd:
+                order.append(g[rnd])
+        rnd += 1
+    added = 0
+    for pid, c in order:
+        tags = sum(tag_sectors(c["context"]), [])
+        if tags and all(per_tag.get(t, 0) >= 12 for t in tags):
+            continue
         if added >= a.max_new:
             break
         if pid in have or c["source_page"] in have_src:
@@ -198,6 +222,8 @@ def main():
         except Exception as e:  # noqa
             print("  skip", pid, e, file=sys.stderr); continue
         sectors, marks = tag_sectors(c["context"])
+        for t0 in sectors + marks:
+            per_tag[t0] = per_tag.get(t0, 0) + 1
         credit = f"Photo: {c['author']}, {c['license']}, via {c['source'].split(' (')[0]}"
         manifest["photos"].append(dict(id=pid, file=f"photos/{fname}", title=c["title"], description=c["description"],
                                        sectors=sectors, landmarks=marks, orientation="landscape" if im.width >= im.height else "portrait",

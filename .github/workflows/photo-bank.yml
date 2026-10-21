@@ -34,7 +34,7 @@ jobs:
       - run: pip install pillow
       - name: Fetch photos
         run: |
-          ARGS="--max-new ${{ github.event.inputs.max_new || '60' }}"
+          ARGS="--max-new ${{ github.event.inputs.max_new || '150' }}"
           if [ -n "${{ github.event.inputs.query }}" ]; then ARGS="$ARGS --query \"${{ github.event.inputs.query }}\""; fi
           if [ -f photos/requests.txt ]; then
             while IFS= read -r q; do [ -n "$q" ] && ARGS="$ARGS --query \"$q\""; done < photos/requests.txt
