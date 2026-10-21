@@ -20,6 +20,8 @@ Spec format (JSON):
      "list":    ["Auteuil", "Chomedey", ...],                                                 # two-column gold-dot list
      "banner":  {"icon": "search", "text": "Inspection condition"},
      "timeline": ["Year 1","Year 2","Year 3"],
+     "photo":   {"file": "photos/c-123-ab12.jpg", "credit": "Photo: Name, CC BY-SA 4.0, via Wikimedia Commons",
+                 "position": "center 40%"},                                                   # rounded photo panel
      "body": "Text with **bold** allowed.", "source": "Per courticonnect.ca, Q1 2026"},
     {"type": "cta", "kicker": "YOUR NEXT STEP", "title": "Eyeing a Laval listing? Send it to me.",
      "lines": [{"icon": "message", "text": "DM it here, or email"},
@@ -28,6 +30,8 @@ Spec format (JSON):
   ]
 }
 Every block is optional except type/title. Use only one or two blocks per point slide.
+Photos: the cover takes "photo": {...} too (full-bleed background under a blue overlay). "file" is relative to the
+repo root (photos/ bank). "position" is an optional CSS object-position to frame the subject. Always pass "credit".
 """
 import base64, html, json, re, sys, pathlib
 
@@ -175,6 +179,15 @@ h1{{font-family:'Playfair Display',serif;font-weight:700;font-size:76px;line-hei
 .white .foot{{border-top-color:#E2E2E2}}
 .foot span{{font-weight:600;font-size:27px}}
 .foot img{{height:64px}}
+.ph{{position:relative;border-radius:22px;overflow:hidden;height:390px;box-shadow:0 0 0 3px rgba(212,175,55,.85)}}
+.ph img{{width:100%;height:100%;object-fit:cover;display:block}}
+.ph .cr{{position:absolute;right:12px;bottom:10px;max-width:80%;font-size:15px;line-height:1.25;color:#fff;
+  background:rgba(0,0,0,.45);padding:5px 10px;border-radius:8px;text-align:right}}
+.withphoto .num{{font-size:150px}}
+.bg{{position:absolute;inset:0;z-index:0}} .bg img{{width:100%;height:100%;object-fit:cover}}
+.bg:after{{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,40,90,.35) 0%,rgba(30,144,255,.05) 18%,rgba(30,144,255,.12) 34%,rgba(30,144,255,.82) 50%,{BLUE} 60%)}}
+.bg .cr{{position:absolute;right:24px;top:178px;z-index:2;font-size:15px;color:#fff;background:rgba(0,0,0,.4);padding:4px 10px;border-radius:8px}}
+.cover.hasbg > *:not(.bg):not(.num){{position:relative;z-index:1}} .cover.hasbg .num{{z-index:1;top:auto;bottom:640px;text-shadow:none}} .cover.hasbg .main{{justify-content:flex-end;padding-bottom:40px}} .cover.hasbg .icons{{display:none}} .cover.hasbg h1{{font-size:84px}}
 .cta{{background:#fff;color:#000;padding:0}}
 .cta .inner{{padding:90px 96px 0;position:relative;z-index:2}} .cta .copy{{max-width:600px}}
 .cta h1{{color:{BLUE};font-size:88px;line-height:1.04;margin-top:44px}}
@@ -193,13 +206,31 @@ DEFS = ('<svg width="0" height="0" style="position:absolute"><defs><linearGradie
         '<stop offset="0" stop-color="#8A5A00"/><stop offset=".25" stop-color="#D4AF37"/><stop offset=".5" stop-color="#FFF4C2"/>'
         '<stop offset=".75" stop-color="#D4AF37"/><stop offset="1" stop-color="#8A5A00"/></linearGradient></defs></svg>')
 
+PHOTO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+def photo_src(ph):
+    f = pathlib.Path(ph["file"])
+    f = f if f.is_absolute() else PHOTO_ROOT / f
+    mime = "image/png" if f.suffix.lower() == ".png" else "image/jpeg"
+    return b64(f, mime)
+
+def photo_panel(ph):
+    pos = html.escape(ph.get("position", "center"))
+    cr = f'<div class="cr">{html.escape(ph["credit"])}</div>' if ph.get("credit") else ""
+    return f'<div class="ph"><img src="{photo_src(ph)}" style="object-position:{pos}">{cr}</div>'
+
 def foot(logo):
     return f'<div class="foot"><span>{FOOTER}</span><img src="{logo}"></div>'
 
 def slide_cover(s, logo):
     icons = "".join(f"<span>{icon(i, 38)}</span>" for i in s.get("icons", []))
     badge = f'<div class="badge">{html.escape(s["badge"])}</div>' if s.get("badge") else ""
-    return f'''<div class="s cover {s.get("theme","blue")}">
+    bg = ""
+    if s.get("photo"):
+        ph = s["photo"]
+        cr = f'<div class="cr">{html.escape(ph["credit"])}</div>' if ph.get("credit") else ""
+        bg = f'<div class="bg"><img src="{photo_src(ph)}" style="object-position:{html.escape(ph.get("position","center"))}">{cr}</div>'
+    return f'''<div class="s cover {s.get("theme","blue")}{" hasbg" if bg else ""}">{bg}
 <div class="top"><div class="kicker">{html.escape(s.get("kicker",""))}</div><div class="rule"></div>{badge}</div>
 {f'<div class="num">{html.escape(s["numeral"])}</div>' if s.get("numeral") else ""}
 <div class="main">{f'<div class="icons">{icons}</div>' if icons else ""}
@@ -213,6 +244,10 @@ def slide_point(s, logo):
     if steps:
         dashes = '<div class="dashes">' + "".join(f'<i class="{"on" if k < step else ""}"></i>' for k in range(steps)) + "</div>"
     blocks = ""
+    if s.get("photo"):
+        blocks += photo_panel(s["photo"])
+        if any(s.get(k) for k in ("cards","chips","bars","list","timeline")):
+            blocks += '<div style="height:22px"></div>'
     if s.get("bars"):
         b = s["bars"]
         rows = "".join(f'<div class="bar"><span>{html.escape(r["label"])}</span><div class="track"><div class="fill" style="width:{max(4,min(100,r["pct"]*100)):.0f}%"></div></div><b>{html.escape(r["value"])}</b></div>' for r in b["rows"])
@@ -230,7 +265,7 @@ def slide_point(s, logo):
     if s.get("timeline"):
         blocks += '<div class="tl">' + "".join(f"<div>{html.escape(x)}</div>" for x in s["timeline"]) + "</div>"
     num = f'<div class="num">{html.escape(s["numeral"])}</div>' if s.get("numeral") else ""
-    return f'''<div class="s {s.get("theme","blue")}">
+    return f'''<div class="s {s.get("theme","blue")}{" withphoto" if s.get("photo") else ""}">
 <div class="top"><div class="kicker">{html.escape(s.get("kicker",""))}</div><div class="rule"></div>{dashes}</div>
 <div class="main"><div class="hrow"><h1>{md(s["title"])}</h1>{num}</div>{blocks}
 {f'<div class="body">{md(s["body"])}</div>' if s.get("body") else ""}
