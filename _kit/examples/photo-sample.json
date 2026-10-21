@@ -1,0 +1,6 @@
+{"slides":[
+{"type":"cover","kicker":"LAVAL RELOCATION GUIDE","badge":"4 spots","title":"Moving to Laval? Start with the water.","sub":"Four riverside spots that show you how locals live here.","numeral":"4","photo":{"file":"photos/c-200265746-51c3c9484f.jpg","credit":"Photo: Maxime Laterreur, CC BY 4.0, via Wikimedia Commons","position":"center 55%"}},
+{"type":"point","kicker":"SPOT 1 OF 4","step":1,"steps":4,"title":"Saint-Vincent-de-Paul's riverfront","numeral":"01","photo":{"file":"photos/c-21599003-4e3eb2ef0d.jpg","credit":"Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons","position":"center 60%"},"body":"Historic church spires right on the **Rivière des Prairies**. A quieter, heritage feel."},
+{"type":"point","theme":"white","kicker":"SPOT 2 OF 4","step":2,"steps":4,"title":"Centre de la nature, Duvernay","numeral":"02","photo":{"file":"photos/c-55028973-e57a163bed.jpg","credit":"Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons"},"body":"Ponds, gardens and trails in the middle of the island. Free to visit."},
+{"type":"cta","kicker":"YOUR NEXT STEP","title":"New to Laval? Let's find your sector.","lines":[{"icon":"message","text":"Message me here, or email"},{"icon":"mail","text":"davidterzakian@gmail.com","bold":true}],"tagline":"Let's break this down together. No rush.","save":"Save this for your move"}
+]}
