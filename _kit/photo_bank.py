@@ -179,7 +179,7 @@ def main():
     PHOTOS.mkdir(exist_ok=True)
     manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {"photos": []}
     have = {p["id"] for p in manifest["photos"]}
-    have_src = {p["source_page"] for p in manifest["photos"]}
+    have_src = {p["source_page"] for p in manifest["photos"]} | set(manifest.get("blocked", []))
     from PIL import Image
     cands = {**commons_candidates(), **openverse_candidates()}
     print(f"{len(cands)} candidates, {len(have)} already in bank", flush=True)
