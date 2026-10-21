@@ -36,11 +36,11 @@ QC_HINT = re.compile(r"(qu[ée]bec|\bqc\b|canada|île j[ée]sus|ile jesus|montr[
                      + "|".join(re.escape(x) for x in SECTORS + LANDMARKS) + r")", re.I)
 
 
-def get_json(url, tries=3):
+def get_json(url, tries=2):
     for k in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=25) as r:
                 return json.load(r)
         except Exception as e:  # noqa
             if k == tries - 1:
@@ -51,7 +51,7 @@ def get_json(url, tries=3):
 
 def get_bytes(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=120) as r:
+    with urllib.request.urlopen(req, timeout=40) as r:
         return r.read()
 
 
@@ -75,20 +75,20 @@ II = "url|extmetadata|size|mime"
 def commons_files_from(params):
     out, cont = [], {}
     while True:
-        q = dict(params, action="query", format="json", prop="imageinfo|categories", iiprop=II, iiurlwidth=1600,
+        q = dict({k: v for k, v in params.items() if not k.startswith("_")}, action="query", format="json", prop="imageinfo|categories", iiprop=II, iiurlwidth=1600,
                  cllimit="max", clshow="!hidden", **cont)
         d = get_json(API + "?" + urllib.parse.urlencode(q))
         if not d:
             break
         out += list((d.get("query") or {}).get("pages", {}).values())
-        if "continue" in d and len(out) < 500:
+        if "continue" in d and len(out) < params.get("_cap", 100):
             cont = {k: v for k, v in d["continue"].items()}
         else:
             break
     return out
 
 
-def commons_subcats(root, depth=3, cap=250):
+def commons_subcats(root, depth=2, cap=60):
     seen, frontier = {root}, [root]
     for _ in range(depth):
         nxt = []
@@ -105,10 +105,14 @@ def commons_subcats(root, depth=3, cap=250):
 
 def commons_candidates():
     pages = []
-    for cat in commons_subcats("Category:Laval, Quebec"):
-        pages += commons_files_from(dict(generator="categorymembers", gcmtitle=cat, gcmtype="file", gcmlimit=100))
+    cats = commons_subcats("Category:Laval, Quebec")
+    print(f"commons: {len(cats)} categories", flush=True)
+    for i, cat in enumerate(cats):
+        pages += commons_files_from(dict(generator="categorymembers", gcmtitle=cat, gcmtype="file", gcmlimit=50, _cap=50))
+        if i % 10 == 0: print(f"  cat {i}/{len(cats)} pages so far {len(pages)}", flush=True)
     for s in SEARCHES:
-        pages += commons_files_from(dict(generator="search", gsrsearch=s, gsrnamespace=6, gsrlimit=50))
+        pages += commons_files_from(dict(generator="search", gsrsearch=s, gsrnamespace=6, gsrlimit=25, _cap=25))
+    print(f"commons: {len(pages)} raw pages", flush=True)
     res = {}
     for p in pages:
         ii = (p.get("imageinfo") or [{}])[0]
@@ -158,6 +162,7 @@ def openverse_candidates():
                 source_page=r.get("foreign_landing_url", ""), download=r.get("url"),
                 width=r.get("width"), height=r.get("height"), context=text)
         time.sleep(1)
+    print(f"openverse: {len(res)} candidates", flush=True)
     return res
 
 
@@ -173,7 +178,7 @@ def main():
     have_src = {p["source_page"] for p in manifest["photos"]}
     from PIL import Image
     cands = {**commons_candidates(), **openverse_candidates()}
-    print(f"{len(cands)} candidates, {len(have)} already in bank")
+    print(f"{len(cands)} candidates, {len(have)} already in bank", flush=True)
     added = 0
     for pid, c in cands.items():
         if added >= a.max_new:
