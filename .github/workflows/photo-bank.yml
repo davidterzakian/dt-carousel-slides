@@ -1,0 +1,50 @@
+name: Laval photo bank
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "Max new photos to add this run"
+        default: "150"
+      query:
+        description: "Optional extra search (e.g. 'Berge des Baigneurs Laval')"
+        default: ""
+  schedule:
+    - cron: "17 6 1 * *"   # monthly top-up, 1st of the month
+  push:
+    paths:
+      - "photos/requests.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photo-bank
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Fetch photos
+        run: |
+          ARGS="--max-new ${{ github.event.inputs.max_new || '60' }}"
+          if [ -n "${{ github.event.inputs.query }}" ]; then ARGS="$ARGS --query \"${{ github.event.inputs.query }}\""; fi
+          if [ -f photos/requests.txt ]; then
+            while IFS= read -r q; do [ -n "$q" ] && ARGS="$ARGS --query \"$q\""; done < photos/requests.txt
+          fi
+          eval python3 _kit/photo_bank.py $ARGS
+      - name: Commit
+        run: |
+          git config user.name "photo-bank-bot"
+          git config user.email "davidterzakian@gmail.com"
+          git add photos
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Photo bank: add Laval photos"
+          git pull --rebase origin main
+          git push origin HEAD:main
