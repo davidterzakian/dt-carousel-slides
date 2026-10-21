@@ -124,7 +124,7 @@ body{{font-family:'Work Sans',sans-serif;-webkit-font-smoothing:antialiased}}
 .dashes i.on{{background:{GOLD_CSS} !important}}
 .badge{{border:2.5px solid #D4AF37;border-radius:40px;padding:10px 26px;font-weight:700;font-size:25px;letter-spacing:.12em}}
 .main{{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:20px}}
-.hrow{{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:44px}}
+.hrow{{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:44px}} .hrow h1{{flex:1;min-width:0}}
 h1{{font-family:'Playfair Display',serif;font-weight:700;font-size:76px;line-height:1.06;letter-spacing:-.01em}}
 .cover h1{{font-size:92px;line-height:1.04}}
 .num{{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:170px;line-height:.9;
@@ -176,12 +176,12 @@ h1{{font-family:'Playfair Display',serif;font-weight:700;font-size:76px;line-hei
 .foot span{{font-weight:600;font-size:27px}}
 .foot img{{height:64px}}
 .cta{{background:#fff;color:#000;padding:0}}
-.cta .inner{{padding:90px 96px 0;position:relative;z-index:2}}
+.cta .inner{{padding:90px 96px 0;position:relative;z-index:2}} .cta .copy{{max-width:600px}}
 .cta h1{{color:{BLUE};font-size:88px;line-height:1.04;margin-top:44px}}
 .cta .ln{{display:flex;align-items:center;gap:26px;font-size:36px;margin-top:24px}}
 .cta .ln b{{font-weight:700}}
 .cta .tag{{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:46px;margin-top:40px}}
-.cta .hs{{position:absolute;right:40px;bottom:120px;height:560px;z-index:1}}
+.cta .hs{{position:absolute;right:30px;bottom:120px;height:540px;z-index:1}}
 .cta .band{{position:absolute;left:0;right:0;bottom:0;height:120px;background:{BLUE};color:#fff;display:flex;align-items:center;
   justify-content:space-between;padding:0 96px;font-weight:600;font-size:26px;z-index:3}}
 .cta .band:before{{content:'';position:absolute;left:0;right:0;top:0;height:5px;background:{GOLD_CSS}}}
@@ -242,8 +242,8 @@ def slide_cta(s, logo, head):
     lines = "".join(f'<div class="ln">{icon(l.get("icon","message"),42)}{"<b>" if l.get("bold") else "<span>"}{html.escape(l["text"])}{"</b>" if l.get("bold") else "</span>"}</div>' for l in s.get("lines", []))
     return f'''<div class="s cta"><div class="inner">
 <div class="top"><div class="kicker">{html.escape(s.get("kicker","YOUR NEXT STEP"))}</div><div class="rule"></div><img class="logo" src="{logo}"></div>
-<h1 style="max-width:720px">{md(s["title"])}</h1><div style="margin-top:30px">{lines}</div>
-{f'<div class="tag">{md(s["tagline"])}</div>' if s.get("tagline") else ""}</div>
+<h1 style="max-width:760px">{md(s["title"])}</h1><div class="copy"><div style="margin-top:30px">{lines}</div>
+{f'<div class="tag">{md(s["tagline"])}</div>' if s.get("tagline") else ""}</div></div>
 <img class="hs" src="{head}">
 <div class="band"><span>{FOOTER}</span>{f'<span class="sv">{icon("bookmark",30)}{html.escape(s["save"])}</span>' if s.get("save") else ""}</div></div>'''
 
@@ -269,12 +269,25 @@ def main():
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(150)
             # overflow guard: report if content is taller than the slide
-            over = pg.evaluate("(()=>{const m=document.querySelector('.main');return m? m.scrollHeight>m.clientHeight+2 : false})()")
+            over = pg.evaluate("""(()=>{
+              const issues=[]; const r=e=>e&&e.getBoundingClientRect();
+              const m=document.querySelector('.main'); if(m && m.scrollHeight>m.clientHeight+2) issues.push('content overflows the slide');
+              const h=document.querySelector('.hrow h1'), n=document.querySelector('.hrow .num');
+              if(h&&n&&r(h).right>r(n).left-24) issues.push('headline touches the gold numeral');
+              const t=document.querySelector('.cta .inner'), hs=document.querySelector('.cta .hs'), c=document.querySelector('.cta .copy');
+              if(c&&hs){const hb=r(hs),w=document.createTreeWalker(c,NodeFilter.SHOW_TEXT);let x;while((x=w.nextNode())){const g=document.createRange();g.selectNodeContents(x);for(const q of g.getClientRects()){if(q.width&&q.bottom>hb.top+30&&q.right>hb.left+hb.width*0.22){issues.push('CTA text runs into the headshot');break}}}}
+              if(t&&t.scrollHeight>1230) issues.push('CTA text too long');
+              document.querySelectorAll('h3,.chip,.bar span').forEach(e=>{if(e.scrollWidth>e.clientWidth+2) issues.push('text clipped: '+e.textContent.slice(0,30))});
+              return issues.join('; ');
+            })()""")
+            words = len(re.sub(r"\*\*", "", s.get("body", "")).split())
+            if t == "point" and words > 20:
+                over = (over + "; " if over else "") + f"body is {words} words (max 20)"
             f = out / f"slide-{n:02d}.png"
             pg.screenshot(path=str(f), clip={"x": 0, "y": 0, "width": W, "height": H})
             files.append(str(f))
             if over:
-                print(f"WARNING: slide {n} content overflows; shorten text or remove a block", file=sys.stderr)
+                print(f"WARNING: slide {n}: {over}. Shorten the text and re-render.", file=sys.stderr)
         br.close()
     print("\n".join(files))
 
