@@ -1,0 +1,135 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LAVAL RELOCATION GUIDE",
+   "badge": "5 ways",
+   "icons": [
+    "train",
+    "car",
+    "pin",
+    "clock",
+    "arrows"
+   ],
+   "title": "5 ways to get from Laval to Montreal",
+   "sub": "Metro, REM, train or bridge: your sector shapes your commute.",
+   "numeral": "5",
+   "photo": {
+    "file": "photos/c-145478014-fb5d37b4d3.jpg",
+    "credit": "Photo: Guilhem Vellut from Annecy, France, CC BY 2.0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "WAY 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Three metro stops on the orange line",
+   "numeral": "01",
+   "photo": {
+    "file": "photos/c-169645491-d9c6fdc836.jpg",
+    "credit": "Photo: Quebecguy, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "**Cartier** in Pont-Viau, plus **De la Concorde** and **Montmorency** in Laval-des-Rapides. Straight into Montreal on the orange line.",
+   "source": "Per STL and Wikipedia, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "WAY 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Sainte-Dorothée now has the REM",
+   "numeral": "02",
+   "photo": {
+    "file": "photos/c-195922027-ae7212825c.jpg",
+    "credit": "Photo: Quebecguy, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 50%"
+   },
+   "body": "**Sainte-Dorothée** and **Île-Bigras** REM stations opened Nov. 17, 2025, linking west Laval to downtown Montreal.",
+   "source": "Per STL and Time Out Montréal, October 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "WAY 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Commuter train from Sainte-Rose and Vimont",
+   "numeral": "03",
+   "chips": [
+    {
+     "icon": "train",
+     "label": "Sainte-Rose"
+    },
+    {
+     "icon": "train",
+     "label": "Vimont"
+    },
+    {
+     "icon": "train",
+     "label": "De la Concorde"
+    }
+   ],
+   "body": "The **exo2 Saint-Jérôme** line stops at three Laval stations on its way downtown. Check exo's schedule first.",
+   "source": "Per STL, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "WAY 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Driving? Your sector picks your bridge",
+   "numeral": "04",
+   "body": "Seven road bridges cross the **Rivière des Prairies**. Living near yours makes the daily drive simpler.",
+   "source": "Per Wikipedia, October 2026",
+   "chips": [
+    {
+     "icon": "car",
+     "label": "Pont Viau"
+    },
+    {
+     "icon": "car",
+     "label": "Médéric-Martin"
+    },
+    {
+     "icon": "car",
+     "label": "Louis-Bisson"
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "kicker": "WAY 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Test the commute before you pick",
+   "numeral": "05",
+   "banner": {
+    "icon": "dollar",
+    "text": "Metro in Laval: Tous modes AB fare or higher"
+   },
+   "body": "Try the trip at **rush hour** from the sector you like, then compare it with your next pick.",
+   "source": "Per STL, October 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Moving to Laval? Let's map your commute.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your move"
+  }
+ ]
+}
