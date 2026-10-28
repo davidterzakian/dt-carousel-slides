@@ -1,0 +1,154 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LAVAL INVESTOR GUIDE",
+   "badge": "5 rules",
+   "icons": [
+    "building",
+    "key",
+    "file",
+    "waves",
+    "dollar"
+   ],
+   "title": "Your first Laval plex: 5 rules before you offer",
+   "sub": "Duplex, triplex or 4-plex: what changes when tenants come with it.",
+   "numeral": "5",
+   "photo": {
+    "file": "photos/c-21599003-4e3eb2ef0d.jpg",
+    "credit": "Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Living there changes your down payment",
+   "numeral": "01",
+   "cards": [
+    {
+     "icon": "home",
+     "title": "Live-in duplex",
+     "sub": "5% to $500K, 10% above"
+    },
+    {
+     "icon": "building",
+     "title": "Live-in 3-4 units",
+     "sub": "10% minimum"
+    },
+    {
+     "icon": "key",
+     "title": "Rental only",
+     "sub": "20% minimum"
+    }
+   ],
+   "body": "Example: a **$700,000 duplex** you live in needs at least **$45,000** down. Confirm with your mortgage broker.",
+   "source": "Per CMHC, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "The leases come with the building",
+   "numeral": "02",
+   "chips": [
+    {
+     "icon": "file",
+     "label": "Every lease"
+    },
+    {
+     "icon": "dollar",
+     "label": "Rent history"
+    },
+    {
+     "icon": "search",
+     "label": "Expense invoices"
+    }
+   ],
+   "body": "You can't change current leases after you buy. Get every lease and expense record from the seller first.",
+   "source": "Per Tribunal administratif du logement, October 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Rent increases follow TAL rules",
+   "numeral": "03",
+   "banner": {
+    "icon": "percent",
+    "text": "3.1%: TAL base rate for 2026 renewals"
+   },
+   "body": "It's a reference, not a cap. Tenants can refuse an increase, and the **TAL** can set the rent.",
+   "source": "Per TAL and Narcity, January 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Near the water? Check the flood map",
+   "numeral": "04",
+   "photo": {
+    "file": "photos/c-5976892-b2ea366952.jpg",
+    "credit": "Photo: Laslovarga, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Looking in **Laval-Ouest**, **Îles-Laval** or **Saint-Vincent-de-Paul**? Search the address on Québec's flood zone map first.",
+   "source": "Per Québec.ca, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Run the real costs, not a guess",
+   "numeral": "05",
+   "chips": [
+    {
+     "icon": "building",
+     "label": "City tax"
+    },
+    {
+     "icon": "school",
+     "label": "School tax"
+    },
+    {
+     "icon": "shield",
+     "label": "Insurance"
+    },
+    {
+     "icon": "flame",
+     "label": "Heating"
+    },
+    {
+     "icon": "hammer",
+     "label": "Repairs"
+    }
+   ],
+   "body": "Ask for the actual **Laval tax bills** and utility costs. Then walk through cash flow with your accountant."
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Eyeing a Laval plex? Send me the listing.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "I'll give it to you straight, no arrogance, no fluff.",
+   "save": "Save this for your first plex"
+  }
+ ]
+}

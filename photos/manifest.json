@@ -304,7 +304,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-10-28"
+   ]
   },
   {
    "id": "c-200265746",
@@ -475,7 +477,7 @@
    "credit": "Photo: Veillg1, CC BY-SA 4.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": true,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -1036,7 +1038,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-10-28"
+   ]
   },
   {
    "id": "c-116436111",
