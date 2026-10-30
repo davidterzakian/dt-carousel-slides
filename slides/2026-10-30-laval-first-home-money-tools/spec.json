@@ -1,0 +1,146 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LAVAL BUYER GUIDE",
+   "badge": "5 checks",
+   "title": "First Laval home? Know these 5 money tools.",
+   "sub": "The savings accounts and tax credits first-time buyers ask me about.",
+   "numeral": "5",
+   "photo": {
+    "file": "photos/c-145477841-09388e748a.jpg",
+    "credit": "Photo: Guilhem Vellut, CC BY 2.0, via Wikimedia Commons",
+    "position": "center 75%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "CHECK 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Start with a real Laval price",
+   "numeral": "01",
+   "bars": {
+    "icon": "chart",
+    "label": "CONDO MEDIAN PRICE",
+    "rows": [
+     {
+      "label": "Chomedey",
+      "value": "$450K",
+      "pct": 1.0
+     },
+     {
+      "label": "All of Laval",
+      "value": "$440K",
+      "pct": 0.98
+     },
+     {
+      "label": "Laval-des-Rapides*",
+      "value": "$374K",
+      "pct": 0.83
+     }
+    ]
+   },
+   "body": "Your savings plan starts with the price. Condo medians shift by sector, so compare the ones you like.",
+   "source": "Per Centris.ca, Q3 2026 (*last 4 quarters)"
+  },
+  {
+   "type": "point",
+   "kicker": "CHECK 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "The FHSA: save tax-free",
+   "numeral": "02",
+   "photo": {
+    "file": "photos/c-168310454-6f6cd65d9a.jpg",
+    "credit": "Photo: Natthager, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Up to **$8,000 a year**, **$40,000 lifetime**. Contributions are generally deductible; qualifying home withdrawals aren't taxed.",
+   "source": "Per Canada Revenue Agency, October 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "The Home Buyers' Plan (RRSP)",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "dollar",
+     "title": "$60,000",
+     "sub": "Max RRSP withdrawal"
+    },
+    {
+     "icon": "clock",
+     "title": "15 years",
+     "sub": "To pay it back"
+    }
+   ],
+   "body": "First withdrawals from 2026 to 2028 start repayment in the fifth year after. You repay your RRSP over time.",
+   "source": "Per Canada Revenue Agency, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "CHECK 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Québec's new credit: up to $1,400",
+   "numeral": "04",
+   "photo": {
+    "file": "photos/c-4133004-d7ecbf1a50.jpg",
+    "credit": "Photo: Jean-Philippe Boulet, CC BY 3.0, via Wikimedia Commons",
+    "position": "center 50%"
+   },
+   "body": "**Refundable**, starting with the 2026 tax year. Advance payments can be requested from October 2026.",
+   "source": "Per Revenu Québec, October 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "CHECK 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "The federal Home Buyers' Amount",
+   "numeral": "05",
+   "cards": [
+    {
+     "icon": "file",
+     "title": "Line 31270",
+     "sub": "On your federal return"
+    },
+    {
+     "icon": "dollar",
+     "title": "$10,000",
+     "sub": "Amount you can claim"
+    },
+    {
+     "icon": "key",
+     "title": "First-timer",
+     "sub": "No owned home, past 4 years"
+    }
+   ],
+   "body": "A non-refundable credit. Ask your accountant how each of these fits your situation before you file.",
+   "source": "Per Canada Revenue Agency, October 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Buying your first Laval home? Let's talk.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your first home"
+  }
+ ]
+}
