@@ -1,0 +1,150 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LAVAL RELOCATION GUIDE",
+   "badge": "5 rules",
+   "icons": [
+    "car",
+    "calendar",
+    "alert",
+    "home",
+    "tree",
+    "sun"
+   ],
+   "title": "New to Laval? 5 winter rules to know first.",
+   "sub": "Your first snow season here, from Chomedey to Duvernay.",
+   "numeral": "5",
+   "photo": {
+    "file": "photos/c-31109995-902cf5f899.jpg",
+    "credit": "Île Paton, Chomedey · Photo: Laurent Bélanger, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Winter tires: Dec 1 to Mar 15",
+   "numeral": "01",
+   "cards": [
+    {
+     "icon": "calendar",
+     "title": "December 1",
+     "sub": "Winter tires required"
+    },
+    {
+     "icon": "car",
+     "title": "March 15",
+     "sub": "Last required day"
+    },
+    {
+     "icon": "alert",
+     "title": "$200 to $300",
+     "sub": "Fine if you skip it"
+    }
+   ],
+   "body": "Every Québec-registered car must be winter-ready. Book your tire swap early, garages get busy in November.",
+   "source": "Per Québec.ca, November 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Car shelters follow a calendar",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "calendar",
+     "title": "October 15",
+     "sub": "Shelter can go up"
+    },
+    {
+     "icon": "clock",
+     "title": "April 30",
+     "sub": "Shelter must come down"
+    }
+   ],
+   "body": "Laval sets the dates. Keep it **0.6 m** from the curb and **1.5 m** from a fire hydrant.",
+   "source": "Per Ville de Laval bylaw, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Read the parking signs",
+   "numeral": "03",
+   "chips": [
+    {
+     "icon": "zap",
+     "label": "Flashing sign: no parking"
+    },
+    {
+     "icon": "alert",
+     "label": "Orange signs come first"
+    },
+    {
+     "icon": "message",
+     "label": "Text and email alerts"
+    },
+    {
+     "icon": "pin",
+     "label": "Register with 311"
+    }
+   ],
+   "body": "When crews clear your street, one side closes, usually **8 a.m. to 5 p.m.** Info-Stationnement sends alerts.",
+   "source": "Per Ville de Laval, November 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Your snow stays on your lot",
+   "numeral": "04",
+   "banner": {
+    "icon": "home",
+    "text": "No blowing or pushing snow onto the street"
+   },
+   "body": "Laval bans putting snow on the street or sidewalk, contractors included. Fines apply. Keep your hydrant clear too.",
+   "source": "Per Ville de Laval, Stratégie neige"
+  },
+  {
+   "type": "point",
+   "kicker": "RULE 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Then get out and enjoy it",
+   "numeral": "05",
+   "photo": {
+    "file": "photos/c-54594127-d5114805c2.jpg",
+    "credit": "Centre de la nature, Duvernay · Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons",
+    "position": "center 40%"
+   },
+   "body": "Centre de la nature in **Duvernay** has skating, tube sliding and cross-country skiing, with rentals on site.",
+   "source": "Per Tourisme Laval, November 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Moving to Laval this winter? Let's talk.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your move"
+  }
+ ]
+}
