@@ -1,0 +1,163 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "LAVAL INVESTOR GUIDE",
+   "badge": "5 numbers",
+   "icons": [
+    "building",
+    "percent",
+    "dollar",
+    "chart",
+    "key",
+    "pin"
+   ],
+   "title": "Buying a Laval rental? Read these 5 numbers.",
+   "sub": "What CMHC's latest rental survey says, from Laval-des-Rapides to the whole island.",
+   "numeral": "5",
+   "photo": {
+    "file": "photos/c-123281734-890748f2d1.jpg",
+    "credit": "Near De La Concorde station, Laval-des-Rapides · Photo: Elli, CC0, via Wikimedia Commons",
+    "position": "center 40%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Vacancy climbed to 3.4%",
+   "numeral": "01",
+   "bars": {
+    "icon": "chart",
+    "label": "LAVAL RENTAL VACANCY RATE",
+    "rows": [
+     {
+      "label": "October 2022",
+      "value": "1.8%",
+      "pct": 0.5
+     },
+     {
+      "label": "October 2023",
+      "value": "2.1%",
+      "pct": 0.58
+     },
+     {
+      "label": "October 2024",
+      "value": "2.4%",
+      "pct": 0.67
+     },
+     {
+      "label": "October 2025",
+      "value": "3.4%",
+      "pct": 0.95
+     }
+    ]
+   },
+   "body": "More units sat empty than in years. Tenants have more choice, so build some vacancy into your numbers.",
+   "source": "Per CMHC via Courrier Laval & Desjardins, Dec 2025"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Average rent: $1,347 a month",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "building",
+     "title": "All sizes",
+     "sub": "Occupied private units"
+    },
+    {
+     "icon": "trend-up",
+     "title": "+8.3%",
+     "sub": "In one year"
+    },
+    {
+     "icon": "wallet",
+     "title": "+$103",
+     "sub": "More per month"
+    }
+   ],
+   "body": "That's Laval's average across studios to big units. Compare it to the rents in the plex you're eyeing.",
+   "source": "Per CMHC via Courrier Laval, Dec 2025"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "NUMBER 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Units for rent ask $612 more",
+   "numeral": "03",
+   "bars": {
+    "icon": "key",
+    "label": "LAVAL AVERAGE RENT, 2025",
+    "rows": [
+     {
+      "label": "Units listed for rent",
+      "value": "$1,959",
+      "pct": 0.95
+     },
+     {
+      "label": "Units already rented",
+      "value": "$1,347",
+      "pct": 0.65
+     }
+    ]
+   },
+   "body": "New leases run higher than rents already in place. The leases you inherit set your starting income.",
+   "source": "Per CMHC via Courrier Laval, March 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Pricier units sit empty more",
+   "numeral": "04",
+   "photo": {
+    "file": "photos/c-131500020-025519d634.jpg",
+    "credit": "Boulevard René-Laennec, Laval · Photo: Gaétan Veillette, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 55%"
+   },
+   "body": "Only **0.8%** of Laval's cheapest quarter of units sat vacant, versus **7.7%** of the priciest quarter.",
+   "source": "Per CMHC via Courrier Laval, October 2025 survey"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Laval-des-Rapides: rents up 20.7%",
+   "numeral": "05",
+   "photo": {
+    "file": "photos/c-84094160-0492a233af.jpg",
+    "credit": "Place Bell, Laval-des-Rapides · Photo: Bryantriplex, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 45%"
+   },
+   "body": "Home of Place Bell and Montmorency metro. Three-bedroom-plus units went from **$1,002 to $1,368**.",
+   "source": "Per CMHC via FRAPRU & Courrier Laval, Dec 2025"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Eyeing a Laval plex? Let's run the numbers.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "I'll give it to you straight, no arrogance, no fluff.",
+   "save": "Save this for later"
+  }
+ ]
+}
