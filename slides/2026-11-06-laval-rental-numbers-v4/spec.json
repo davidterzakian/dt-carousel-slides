@@ -86,7 +86,6 @@
   },
   {
    "type": "point",
-   "theme": "white",
    "kicker": "NUMBER 3 OF 5",
    "step": 3,
    "steps": 5,
@@ -109,7 +108,8 @@
     ]
    },
    "body": "New leases run higher than rents already in place. The leases you inherit set your starting income.",
-   "source": "Per CMHC via Courrier Laval, March 2026"
+   "source": "Per CMHC via Courrier Laval, March 2026",
+   "theme": "blue"
   },
   {
    "type": "point",
