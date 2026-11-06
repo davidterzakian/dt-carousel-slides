@@ -9,9 +9,9 @@ ASSETS_DIR must contain dt_logo.png, headshot.jpg and fonts/*.woff2 (default: ./
 Spec format (JSON):
 {
   "slides": [
-    {"type": "cover", "theme": "blue", "kicker": "LAVAL BUYER GUIDE", "badge": "7 checks",
-     "icons": ["dollar","clock"], "title": "Before you fall for a Laval home...", "sub": "...", "numeral": "7"},
-    {"type": "point", "theme": "blue"|"white", "kicker": "CHECK 1 OF 7", "step": 1, "steps": 7,
+    {"type": "cover", "theme": "white", "kicker": "LAVAL BUYER GUIDE", "badge": "7 checks",
+     "icons": ["dollar","clock"], "title": "Before you fall for a Laval home...", "sub": "..."},  # no gold numeral on the cover,
+    {"type": "point", "theme": "white"|"blue", "kicker": "CHECK 1 OF 7", "step": 1, "steps": 7,
      "title": "...", "numeral": "01",
      "cards":   [{"icon": "clock", "title": "How long?", "sub": "Months on the market"}],   # 2-3 cards
      "chips":   [{"icon": "home", "label": "Roof"}],                                         # 3-5 small tiles
@@ -30,7 +30,8 @@ Spec format (JSON):
   ]
 }
 Every block is optional except type/title. Use only one or two blocks per point slide.
-Photos: the cover takes "photo": {...} too (full-bleed background under a blue overlay). "file" is relative to the
+Colours: white is the default (primary) for cover and point slides; set "theme": "blue" on 1-2 point slides max.
+Photos: the cover takes "photo": {...} too: the photo fills the top half of the cover with a gold edge (never a fade). "file" is relative to the
 repo root (photos/ bank). "position" is an optional CSS object-position to frame the subject. Always pass "credit".
 """
 import base64, html, json, re, sys, pathlib
@@ -120,6 +121,7 @@ html,body{{width:{W}px;height:{H}px;overflow:hidden}}
 body{{font-family:'Work Sans',sans-serif;-webkit-font-smoothing:antialiased}}
 .s{{position:relative;width:{W}px;height:{H}px;padding:96px 96px 0;display:flex;flex-direction:column}}
 .blue{{background:{BLUE};color:#fff}} .white{{background:#fff;color:#000}}
+.white h1{{color:{BLUE}}}
 .top{{display:flex;align-items:center;gap:28px;height:56px}}
 .kicker{{font-weight:700;font-size:25px;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}}
 .rule{{flex:1;height:3px;background:{GOLD_CSS};border-radius:2px}}
@@ -186,6 +188,11 @@ h1{{font-family:'Playfair Display',serif;font-weight:700;font-size:76px;line-hei
 .withphoto .num{{font-size:150px}}
 .bg{{position:absolute;inset:0;z-index:0}} .bg img{{width:100%;height:100%;object-fit:cover}}
 .bg:after{{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,40,90,.35) 0%,rgba(30,144,255,.05) 18%,rgba(30,144,255,.12) 34%,rgba(30,144,255,.82) 50%,{BLUE} 60%)}}
+.white .bg:after{{background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.08) 16%,rgba(255,255,255,0) 32%,rgba(255,255,255,.85) 50%,#fff 60%)}}
+.cover.white.hasbg .top{{color:#fff}} .cover.white.hasbg .badge{{color:#fff}}
+.bg.half{{bottom:50%}} .bg.half:after{{background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 26%) !important}}
+.bg.half:before{{content:'';position:absolute;left:0;right:0;bottom:-3px;height:6px;background:{GOLD_CSS};z-index:2}}
+.cover.halfbg .num{{bottom:auto !important;top:720px !important}}
 .bg .cr{{position:absolute;right:24px;top:178px;z-index:2;font-size:15px;color:#fff;background:rgba(0,0,0,.4);padding:4px 10px;border-radius:8px}}
 .cover.hasbg > *:not(.bg):not(.num){{position:relative;z-index:1}} .cover.hasbg .num{{z-index:1;top:auto;bottom:640px;text-shadow:none}} .cover.hasbg .main{{justify-content:flex-end;padding-bottom:40px}} .cover.hasbg .icons{{display:none}} .cover.hasbg h1{{font-size:84px}}
 .cta{{background:#fff;color:#000;padding:0}}
@@ -229,12 +236,12 @@ def slide_cover(s, logo):
     if s.get("photo"):
         ph = s["photo"]
         cr = f'<div class="cr">{html.escape(ph["credit"])}</div>' if ph.get("credit") else ""
-        bg = f'<div class="bg"><img src="{photo_src(ph)}" style="object-position:{html.escape(ph.get("position","center"))}">{cr}</div>'
-    return f'''<div class="s cover {s.get("theme","blue")}{" hasbg" if bg else ""}">{bg}
+        half = True  # David: cover photo always takes the top half (no fade)
+        bg = f'<div class="bg{" half" if half else ""}"><img src="{photo_src(ph)}" style="object-position:{html.escape(ph.get("position","center"))}">{cr}</div>'
+    return f'''<div class="s cover {s.get("theme","white")}{" hasbg" if bg else ""}{" halfbg" if bg else ""}">{bg}
 <div class="top"><div class="kicker">{html.escape(s.get("kicker",""))}</div><div class="rule"></div>{badge}</div>
-{f'<div class="num">{html.escape(s["numeral"])}</div>' if s.get("numeral") else ""}
 <div class="main">{f'<div class="icons">{icons}</div>' if icons else ""}
-<h1 style="max-width:{'700px' if s.get('numeral') else '890px'}">{md(s["title"])}</h1>
+<h1 style="max-width:890px">{md(s["title"])}</h1>
 {f'<div class="sub">{md(s["sub"])}</div>' if s.get("sub") else ""}
 <div class="swipe">Swipe →</div></div>{foot(logo)}</div>'''
 
@@ -265,7 +272,7 @@ def slide_point(s, logo):
     if s.get("timeline"):
         blocks += '<div class="tl">' + "".join(f"<div>{html.escape(x)}</div>" for x in s["timeline"]) + "</div>"
     num = f'<div class="num">{html.escape(s["numeral"])}</div>' if s.get("numeral") else ""
-    return f'''<div class="s {s.get("theme","blue")}{" withphoto" if s.get("photo") else ""}">
+    return f'''<div class="s {s.get("theme","white")}{" withphoto" if s.get("photo") else ""}">
 <div class="top"><div class="kicker">{html.escape(s.get("kicker",""))}</div><div class="rule"></div>{dashes}</div>
 <div class="main"><div class="hrow"><h1>{md(s["title"])}</h1>{num}</div>{blocks}
 {f'<div class="body">{md(s["body"])}</div>' if s.get("body") else ""}
