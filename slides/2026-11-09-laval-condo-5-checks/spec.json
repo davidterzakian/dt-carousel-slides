@@ -1,0 +1,170 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL CONDO BUYERS",
+   "badge": "5 checks",
+   "icons": [
+    "building",
+    "file",
+    "dollar",
+    "hammer",
+    "search",
+    "check"
+   ],
+   "title": "Buying a Laval condo? Check these 5 things first.",
+   "sub": "The building's paperwork tells you more than the showing does.",
+   "photo": {
+    "file": "photos/c-131500343-c2863bed0e.jpg",
+    "credit": "Boulevard René-Laennec, Laval · Photo: Veillg1, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Know the price by sector",
+   "numeral": "01",
+   "bars": {
+    "icon": "trend-up",
+    "label": "LAVAL CONDO MEDIAN PRICE",
+    "rows": [
+     {
+      "label": "Chomedey · Q3 2026",
+      "value": "$450,000",
+      "pct": 0.95
+     },
+     {
+      "label": "Vimont · last 4 quarters",
+      "value": "$371,500",
+      "pct": 0.78
+     }
+    ]
+   },
+   "body": "Chomedey condos took **59 days** on average to sell. Use that time to read the building's papers.",
+   "source": "Per Centris.ca, Q3 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Ask for the syndicate certificate",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "shield",
+     "title": "Fund balance",
+     "sub": "Per the latest study"
+    },
+    {
+     "icon": "check",
+     "title": "3 years of fees",
+     "sub": "Billed and paid"
+    },
+    {
+     "icon": "hammer",
+     "title": "Big repairs",
+     "sub": "Planned, next 10 years"
+    }
+   ],
+   "body": "Since Aug. 14, 2025, the seller must give it to you. The syndicate has **15 days** to issue it.",
+   "source": "Per OACIQ & Québec.ca, 2025"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "CHECK 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Read the contingency fund study",
+   "numeral": "03",
+   "banner": {
+    "icon": "clock",
+    "text": "Required every 5 years"
+   },
+   "body": "It shows if the building is saving enough for future repairs. Syndicates generally have until 2028 for the first one.",
+   "source": "Per OACIQ & Québec.ca, 2025"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Look at the maintenance log",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "clock",
+     "title": "Updated yearly",
+     "sub": "At least once a year"
+    },
+    {
+     "icon": "search",
+     "title": "Reviewed",
+     "sub": "Usually every 5 years"
+    },
+    {
+     "icon": "trend-up",
+     "title": "25-year plan",
+     "sub": "Major repairs ahead"
+    }
+   ],
+   "body": "It lists the building's parts, their condition and big repairs ahead. Compare it with the fund study.",
+   "source": "Per Québec.ca, 2025"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Read the by-laws and minutes",
+   "numeral": "05",
+   "chips": [
+    {
+     "icon": "home",
+     "label": "Pets"
+    },
+    {
+     "icon": "flame",
+     "label": "Barbecues"
+    },
+    {
+     "icon": "key",
+     "label": "Certain uses"
+    },
+    {
+     "icon": "bookmark",
+     "label": "Changes ahead"
+    }
+   ],
+   "body": "By-laws can limit pets or balcony barbecues. Minutes can show changes being discussed. Your notary can walk you through them.",
+   "source": "Per OACIQ"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Eyeing a Laval condo? Send it to me.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your next showing"
+  }
+ ]
+}
