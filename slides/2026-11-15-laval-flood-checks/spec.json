@@ -1,0 +1,147 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL BUYER GUIDE",
+   "badge": "5 checks",
+   "icons": [
+    "waves",
+    "search",
+    "file",
+    "shield",
+    "home",
+    "alert"
+   ],
+   "title": "Buying near Laval's rivers? 5 flood checks",
+   "sub": "Looking along the Rivière des Mille Îles or Rivière des Prairies? Start here.",
+   "photo": {
+    "file": "photos/c-21667069-47234c91c7.jpg",
+    "credit": "Rivière des Mille Îles, Laval · Photo: P199, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 70%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Look up the address on Québec's map",
+   "numeral": "01",
+   "photo": {
+    "file": "photos/c-27090956-60fc5a613b.jpg",
+    "credit": "Rivière des Mille Îles, Sainte-Rose · Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 55%"
+   },
+   "body": "Type the address or lot number into Québec's **interactive flood map**. It takes two minutes.",
+   "source": "Per Québec.ca, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "CHECK 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "The flood rules changed this year",
+   "numeral": "02",
+   "banner": {
+    "icon": "calendar",
+    "text": "New framework since March 1, 2026"
+   },
+   "body": "Québec's new flood-zone rules replaced the old transitional regime. New maps will replace ones mostly **30+ years old**.",
+   "source": "Per Québec.ca, June 2025 and October 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Remember spring 2019 in Laval",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "home",
+     "title": "1,234 buildings",
+     "sub": "Affected by water"
+    },
+    {
+     "icon": "waves",
+     "title": "200 flooded",
+     "sub": "As of April 30, 2019"
+    },
+    {
+     "icon": "pin",
+     "title": "~700 addresses",
+     "sub": "Cut off by water"
+    }
+   ],
+   "body": "Evacuation was recommended for about **400 addresses** in Îles-Laval. Ask about any riverside street's flood history.",
+   "source": "Per Ville de Laval, April 2019"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Read the seller's declarations",
+   "numeral": "04",
+   "chips": [
+    {
+     "icon": "waves",
+     "label": "Near a watercourse?"
+    },
+    {
+     "icon": "home",
+     "label": "Neighbours flooded?"
+    },
+    {
+     "icon": "alert",
+     "label": "Past flood damage?"
+    },
+    {
+     "icon": "file",
+     "label": "Repairs + permits?"
+    }
+   ],
+   "body": "OACIQ guidance lists these flood questions. If there was damage, ask for invoices, permits and a **full inspection**.",
+   "source": "Per OACIQ, April 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "CHECK 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Call your insurer before you offer",
+   "numeral": "05",
+   "photo": {
+    "file": "photos/c-21598752-1faa499c01.jpg",
+    "credit": "Rivière des Prairies, facing Saint-Vincent-de-Paul · Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 50%"
+   },
+   "body": "Overland flood and sewer backup coverage are **optional add-ons**. Get a quote for the exact address first.",
+   "source": "Per Insurance Bureau of Canada, November 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Near the water? Send me the listing.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your next showing"
+  }
+ ]
+}
