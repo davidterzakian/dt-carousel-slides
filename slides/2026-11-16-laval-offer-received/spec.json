@@ -1,0 +1,143 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL SELLER GUIDE",
+   "badge": "5 steps",
+   "icons": [
+    "file",
+    "clock",
+    "handshake",
+    "search",
+    "calendar",
+    "key"
+   ],
+   "title": "Got an offer on your Laval home? Read this.",
+   "sub": "From Saint-François to Sainte-Dorothée, here's how a promise to purchase works.",
+   "photo": {
+    "file": "photos/c-27670567-c8c2cacfe6.jpg",
+    "credit": "Église Saint-François-de-Sales, Saint-François · Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 55%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "You have three ways to answer",
+   "numeral": "01",
+   "chips": [
+    {
+     "icon": "check",
+     "label": "Accept"
+    },
+    {
+     "icon": "alert",
+     "label": "Refuse"
+    },
+    {
+     "icon": "arrows",
+     "label": "Counter-propose"
+    }
+   ],
+   "body": "Not happy with the price or dates? A **counter-proposal** lets you reply with your own terms.",
+   "source": "Per OACIQ, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "STEP 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Watch the acceptance deadline",
+   "numeral": "02",
+   "banner": {
+    "icon": "clock",
+    "text": "A date and time set in the offer"
+   },
+   "body": "Miss it and the promise is **cancelled**. Once you have it, the buyer can't withdraw it before then.",
+   "source": "Per OACIQ, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Conditions protect the buyer",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "dollar",
+     "title": "Financing",
+     "sub": "Proof the loan is approved"
+    },
+    {
+     "icon": "search",
+     "title": "Inspection",
+     "sub": "By a professional"
+    },
+    {
+     "icon": "file",
+     "title": "Documents",
+     "sub": "Like municipal by-laws"
+    }
+   ],
+   "body": "Each condition has its own deadline. Until they're met or waived, the sale isn't final.",
+   "source": "Per OACIQ, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Laval buyers have more to compare",
+   "numeral": "04",
+   "photo": {
+    "file": "photos/c-126122263-86eed61bcf.jpg",
+    "credit": "Église Sainte-Dorothée · Photo: ndoduc, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Active single-family listings in Laval are up **17%** year over year. Homes sold in **36 days** on average.",
+   "source": "Per Centris, Q3 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "The notary date is in the offer",
+   "numeral": "05",
+   "photo": {
+    "file": "photos/c-58599396-6b6d663aa0.jpg",
+    "credit": "Garden in Duvernay, Laval · Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons",
+    "position": "center 50%"
+   },
+   "body": "The promise sets the deed signing, occupancy date and adjustments. The buyer pays the notary and **welcome tax**.",
+   "source": "Per OACIQ, November 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Got an offer? Let's read it together.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "I'll give it to you straight, no arrogance, no fluff.",
+   "save": "Save this for your sale"
+  }
+ ]
+}

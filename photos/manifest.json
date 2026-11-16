@@ -356,7 +356,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "c-155300110",
@@ -1236,7 +1238,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "c-27091554",
@@ -4301,7 +4305,7 @@
    "credit": "Photo: Enrevseluj, CC BY-SA 4.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -4922,7 +4926,7 @@
    "credit": "Photo: Enrevseluj, CC BY-SA 4.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -6295,7 +6299,9 @@
    "attribution_required": true,
    "reviewed": false,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "c-54742146",
@@ -7362,7 +7368,7 @@
    "credit": "Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
