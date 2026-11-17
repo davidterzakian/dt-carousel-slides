@@ -1,0 +1,153 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "NEW TO LAVAL",
+   "badge": "5 steps",
+   "icons": [
+    "calendar",
+    "leaf",
+    "message",
+    "bookmark",
+    "pin",
+    "home"
+   ],
+   "title": "Just moved to Laval? Set up these 5 things.",
+   "sub": "Bins, city services, a free library card and more, from Chomedey to Vimont.",
+   "photo": {
+    "file": "photos/c-40760538-4e50991ca4.jpg",
+    "credit": "1333 boulevard Chomedey · Photo: Laurent Bélanger, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 35%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Find your collection zone",
+   "numeral": "01",
+   "chips": [
+    {
+     "icon": "home",
+     "label": "Garbage"
+    },
+    {
+     "icon": "arrows",
+     "label": "Recycling"
+    },
+    {
+     "icon": "leaf",
+     "label": "Organics"
+    },
+    {
+     "icon": "expand",
+     "label": "Bulky items"
+    }
+   ],
+   "body": "Search your address at **laval.ca/recherche-par-adresse**, then save your 2026 collection calendar.",
+   "source": "Per Ville de Laval, 2026 collection calendar"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Learn the bin timing",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "clock",
+     "title": "After 7 p.m.",
+     "sub": "Or before 7 a.m. on pickup day"
+    },
+    {
+     "icon": "check",
+     "title": "Back by noon",
+     "sub": "The day after pickup"
+    },
+    {
+     "icon": "ruler",
+     "title": "1 metre clear",
+     "sub": "All around the bin"
+    }
+   ],
+   "body": "In winter, the brown bin is often picked up **every two weeks**, depending on your housing type.",
+   "source": "Per Ville de Laval, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "STEP 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Save 311 and open Mon dossier",
+   "numeral": "03",
+   "body": "Outside Laval, dial 450-978-8000. Missing a bin? Request one through **Mon dossier**, the city's online account.",
+   "source": "Per Ville de Laval, November 2026",
+   "banner": {
+    "icon": "message",
+    "text": "Call 311 · Mon–Fri 7 a.m. to 7 p.m."
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Get your free library card",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "bookmark",
+     "title": "Carte Avantages",
+     "sub": "Free for Laval residents"
+    },
+    {
+     "icon": "file",
+     "title": "Bring ID",
+     "sub": "Plus proof of residence"
+    }
+   ],
+   "body": "Sign up in person at a Laval library, like **Sylvain-Garneau** in Sainte-Rose or **Philippe-Panneton** in Laval-Ouest.",
+   "source": "Per Bibliothèques de Laval, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Big items have their own route",
+   "numeral": "05",
+   "banner": {
+    "icon": "pin",
+    "text": "Écocentre de Vimont · 1205 boul. Dagenais O."
+   },
+   "body": "Paint, electronics and tires go to the écocentre. Old furniture? The city collects **bulky items** by reservation.",
+   "source": "Per Ville de Laval, 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "New to Laval? Ask me anything.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Think of me as the friend who happens to know Laval real estate.",
+   "save": "Save this for your move"
+  }
+ ]
+}

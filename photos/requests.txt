@@ -32,3 +32,6 @@ flooding Laval spring
 Saint-François Laval rue résidentielle
 Auteuil Laval quartier
 Laval-Ouest rue
+Bibliothèque Laval
+Bibliothèque Sylvain-Garneau Laval
+Écocentre Laval
