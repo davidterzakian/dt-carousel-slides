@@ -1,0 +1,167 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL BUYER GUIDE",
+   "badge": "5 steps",
+   "icons": [
+    "dollar",
+    "home",
+    "percent",
+    "wallet",
+    "shield"
+   ],
+   "title": "How much down for a Laval home? Here's the math.",
+   "sub": "Real Fabreville and Auteuil prices, run through Canada's rules.",
+   "photo": {
+    "file": "photos/c-145477947-237f7a75e1.jpg",
+    "credit": "Photo: Guilhem Vellut, CC BY 2.0, via Wikimedia Commons",
+    "position": "center 60%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "STEP 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Minimum down isn't a flat 5%",
+   "numeral": "01",
+   "photo": {
+    "file": "photos/c-5976667-0cbc911683.jpg",
+    "credit": "Photo: Laslovarga, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 50%"
+   },
+   "body": "**5%** on the first $500,000. **10%** on the part above it. **20%** at $1.5 million or more.",
+   "source": "Per FCAC (Government of Canada), October 2025"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "STEP 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Fabreville's median house, worked out",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "home",
+     "title": "$566,125",
+     "sub": "Median, last 4 quarters"
+    },
+    {
+     "icon": "dollar",
+     "title": "$31,613",
+     "sub": "Minimum down payment"
+    },
+    {
+     "icon": "percent",
+     "title": "About 5.6%",
+     "sub": "Of the price"
+    }
+   ],
+   "body": "**$25,000** on the first $500,000, plus **$6,613** on the other $66,125.",
+   "source": "Per Centris, Q3 2026 (last 4 quarters)"
+  },
+  {
+   "type": "point",
+   "kicker": "STEP 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Same rules, three Laval prices",
+   "numeral": "03",
+   "bars": {
+    "icon": "chart",
+    "label": "MINIMUM DOWN PAYMENT",
+    "rows": [
+     {
+      "label": "Fabreville condo · $397,100",
+      "value": "$19,855",
+      "pct": 0.51
+     },
+     {
+      "label": "Fabreville house · $566,125",
+      "value": "$31,613",
+      "pct": 0.81
+     },
+     {
+      "label": "Auteuil house · $640,625",
+      "value": "$39,063",
+      "pct": 1.0
+     }
+    ]
+   },
+   "body": "Up to $500,000, it's a clean 5%. Every dollar above that needs **10%** down.",
+   "source": "Per Centris, Q3 2026 (last 4 quarters), with FCAC rules"
+  },
+  {
+   "type": "point",
+   "kicker": "STEP 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Under 20% down? Add insurance.",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "shield",
+     "title": "5% to 9.99%",
+     "sub": "Premium: 4.00% of loan"
+    },
+    {
+     "icon": "shield",
+     "title": "10% to 14.99%",
+     "sub": "Premium: 3.10% of loan"
+    },
+    {
+     "icon": "shield",
+     "title": "15% to 19.99%",
+     "sub": "Premium: 2.80% of loan"
+    }
+   ],
+   "body": "Fabreville example: about **$21,381**, usually added to the mortgage. Québec sales tax on it can't be added to the loan.",
+   "source": "Per CMHC premium table, November 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "STEP 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Then pass the stress test",
+   "numeral": "05",
+   "chips": [
+    {
+     "icon": "percent",
+     "label": "5.25% floor"
+    },
+    {
+     "icon": "trend-up",
+     "label": "Your rate + 2%"
+    },
+    {
+     "icon": "check",
+     "label": "Higher one counts"
+    }
+   ],
+   "body": "Lenders check you can still afford payments at that higher rate. Get pre-approved before you shop.",
+   "source": "Per OSFI, January 2026, and nesto, February 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Eyeing a Laval listing? Let's run the math.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for pre-approval"
+  }
+ ]
+}
