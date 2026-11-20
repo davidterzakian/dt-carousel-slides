@@ -1315,7 +1315,7 @@
    "credit": "Photo: Père Igor, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": true,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -1338,7 +1338,7 @@
    "credit": "Photo: Père Igor, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": true,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -1410,7 +1410,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-20"
+   ]
   },
   {
    "id": "c-61620993",
@@ -2111,7 +2113,7 @@
    "credit": "Photo: Père Igor, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -2134,7 +2136,7 @@
    "credit": "Photo: Père Igor, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -2157,7 +2159,7 @@
    "credit": "Photo: Roi.dagobert, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -2180,7 +2182,7 @@
    "credit": "Photo: Roi.dagobert, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -2203,7 +2205,7 @@
    "credit": "Photo: Roi.dagobert, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -5594,7 +5596,8 @@
    "reviewed": false,
    "use": true,
    "used_on": [
-    "2026-10-30"
+    "2026-10-30",
+    "2026-11-20"
    ]
   },
   {
@@ -8845,7 +8848,7 @@
    "credit": "Photo: Père Igor, CC BY-SA 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -9361,7 +9364,7 @@
    "credit": "Photo: Édouard Vimont, Public domain, via Wikimedia Commons",
    "attribution_required": false,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -9470,7 +9473,7 @@
    "credit": "Photo: Secretary of Defense, CC BY 2.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {

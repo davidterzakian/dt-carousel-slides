@@ -1,0 +1,171 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL SELLER GUIDE",
+   "badge": "5 numbers",
+   "icons": [
+    "home",
+    "building",
+    "dollar",
+    "clock",
+    "wallet"
+   ],
+   "title": "Downsizing in Laval? Run these 5 numbers first.",
+   "sub": "Real Vimont and Laval-des-Rapides prices, house vs condo.",
+   "photo": {
+    "file": "photos/c-168310454-6f6cd65d9a.jpg",
+    "credit": "Photo: Natthager, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 55%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "The house-to-condo gap",
+   "numeral": "01",
+   "bars": {
+    "icon": "chart",
+    "label": "MEDIAN PRICE, LAST 4 QUARTERS",
+    "rows": [
+     {
+      "label": "Vimont house",
+      "value": "$644,112",
+      "pct": 1.0
+     },
+     {
+      "label": "Vimont condo",
+      "value": "$371,500",
+      "pct": 0.58
+     },
+     {
+      "label": "Laval-des-Rapides house",
+      "value": "$638,000",
+      "pct": 0.99
+     },
+     {
+      "label": "Laval-des-Rapides condo",
+      "value": "$374,375",
+      "pct": 0.58
+     }
+    ]
+   },
+   "body": "In both sectors, the median condo costs about **$264K to $273K less** than the median house.",
+   "source": "Per Centris, Q3 2026 (last 4 quarters)"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "NUMBER 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "The welcome tax comes back",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "building",
+     "title": "$371,500",
+     "sub": "Vimont condo median"
+    },
+    {
+     "icon": "dollar",
+     "title": "$3,683",
+     "sub": "Transfer duties on it"
+    }
+   ],
+   "body": "You pay it again on the condo you buy. Take it off your gap before you plan.",
+   "source": "Per Québec.ca 2026 rates, with Centris Q3 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Condos can take longer to sell",
+   "numeral": "03",
+   "photo": {
+    "file": "photos/c-59566795-5b9df8746a.jpg",
+    "credit": "Photo: MaxCote, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Vimont houses averaged **30 days** on market. Laval-des-Rapides condos: **55 days**, with about 73 for sale at a time.",
+   "source": "Per Centris, Q3 2026 (last 4 quarters)"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Sell first, buy first, or bridge?",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "home",
+     "title": "Sell first",
+     "sub": "Your budget is known"
+    },
+    {
+     "icon": "key",
+     "title": "Buy first",
+     "sub": "Risk: two mortgages"
+    },
+    {
+     "icon": "clock",
+     "title": "Bridge loan",
+     "sub": "Needs a firm sale"
+    }
+   ],
+   "body": "A bridge loan is temporary financing between homes, often 90 days to 12 months. Ask your mortgage broker.",
+   "source": "Per RBC Royal Bank, November 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "NUMBER 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Add condo fees to the math",
+   "numeral": "05",
+   "chips": [
+    {
+     "icon": "wallet",
+     "label": "Monthly fees"
+    },
+    {
+     "icon": "shield",
+     "label": "Contingency fund"
+    },
+    {
+     "icon": "alert",
+     "label": "Special assessments"
+    },
+    {
+     "icon": "file",
+     "label": "By-laws"
+    }
+   ],
+   "body": "Every Québec syndicate must keep a contingency fund. Ask for the budget and recent meeting minutes.",
+   "source": "Per CMHC, Québec condo fact sheet"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Thinking of downsizing in Laval? Let's talk.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your next move"
+  }
+ ]
+}
