@@ -1,0 +1,142 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL RELOCATION GUIDE",
+   "badge": "5 spots",
+   "icons": [
+    "waves",
+    "boat",
+    "train",
+    "landmark",
+    "tree"
+   ],
+   "title": "Laval is an island. 5 riverside spots to know.",
+   "sub": "From Île Bigras to Laval-sur-le-Lac, what each one is like.",
+   "photo": {
+    "file": "photos/c-200180040-97e8aec02d.jpg",
+    "credit": "Photo: Maxime Laterreur, CC BY 4.0, via Wikimedia Commons",
+    "position": "center 70%"
+   }
+  },
+  {
+   "type": "point",
+   "kicker": "SPOT 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Île Bigras: an island with a REM stop",
+   "numeral": "01",
+   "photo": {
+    "file": "photos/c-178594933-d19176ae6d.jpg",
+    "credit": "Photo: 이동아, CC BY 4.0, via Wikimedia Commons",
+    "position": "center 45%"
+   },
+   "body": "Part of Îles-Laval, with its own REM station. About **27 minutes** to Central Station at full service.",
+   "source": "Per REM (rem.info), November 2026"
+  },
+  {
+   "type": "point",
+   "kicker": "SPOT 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Vieux-Saint-Vincent-de-Paul",
+   "numeral": "02",
+   "photo": {
+    "file": "photos/c-21497151-c30b1c5e65.jpg",
+    "credit": "Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 35%"
+   },
+   "body": "Settled in **1740**, near the Rivière des Prairies. A heritage main street, terraces and a church from **1853**.",
+   "source": "Per Bonjour Québec, November 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "SPOT 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Auteuil: quiet Mille Îles shoreline",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "waves",
+     "title": "Mille Îles",
+     "sub": "Its north-west border"
+    },
+    {
+     "icon": "car",
+     "title": "Boul. Mille-Îles",
+     "sub": "Follows the shore"
+    },
+    {
+     "icon": "tree",
+     "title": "Parc des Saules",
+     "sub": "One of its riverside parks"
+    }
+   ],
+   "body": "On Laval's north side: a former summer-cottage area by the river, with small parks along the water.",
+   "source": "Per Ville de Laval heritage study, 2020"
+  },
+  {
+   "type": "point",
+   "kicker": "SPOT 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Laval-sur-le-Lac: where 3 waters meet",
+   "numeral": "04",
+   "chips": [
+    {
+     "icon": "waves",
+     "label": "Lac des Deux Montagnes"
+    },
+    {
+     "icon": "waves",
+     "label": "Rivière des Prairies"
+    },
+    {
+     "icon": "waves",
+     "label": "Rivière des Mille Îles"
+    },
+    {
+     "icon": "star",
+     "label": "Golf club since 1917"
+    }
+   ],
+   "body": "Low-density streets, big lots and no sidewalks. Created as its own town in **1915**.",
+   "source": "Per Ville de Laval heritage study, 2020"
+  },
+  {
+   "type": "point",
+   "kicker": "SPOT 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Love the water? Check the map first",
+   "numeral": "05",
+   "banner": {
+    "icon": "search",
+    "text": "Québec.ca flood-zone tool, by address"
+   },
+   "body": "Look up any riverside address before you offer. Then ask your insurer what flood coverage would cost.",
+   "source": "Per Québec.ca, November 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Moving to Laval? Let's find your spot.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your move"
+  }
+ ]
+}
