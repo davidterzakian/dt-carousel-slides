@@ -3738,7 +3738,8 @@
    "reviewed": false,
    "use": true,
    "used_on": [
-    "2026-11-06"
+    "2026-11-06",
+    "2026-11-22"
    ]
   },
   {
@@ -6134,7 +6135,7 @@
    "credit": "Photo: Laurent Bélanger, CC BY-SA 4.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -7756,7 +7757,9 @@
    "attribution_required": false,
    "reviewed": false,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-22"
+   ]
   },
   {
    "id": "c-31082397",
@@ -7895,7 +7898,7 @@
    "credit": "Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {

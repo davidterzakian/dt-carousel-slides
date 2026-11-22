@@ -1,0 +1,161 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL INVESTOR GUIDE",
+   "badge": "5 terms",
+   "icons": [
+    "dollar",
+    "percent",
+    "wallet",
+    "building",
+    "chart"
+   ],
+   "title": "Looking at a Laval plex? Learn these 5 terms.",
+   "sub": "The numbers behind every listing, from Chomedey to Laval-des-Rapides.",
+   "photo": {
+    "file": "photos/c-123281733-022e46249d.jpg",
+    "credit": "Near Av. Léo-Lacombe, Laval · Photo: Elli, CC0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "TERM 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "MRB: price vs. gross rents",
+   "numeral": "01",
+   "bars": {
+    "icon": "chart",
+    "label": "PLEX MEDIAN PRICES",
+    "rows": [
+     {
+      "label": "Chomedey",
+      "value": "$922,000",
+      "pct": 0.95
+     },
+     {
+      "label": "Laval-des-Rapides",
+      "value": "$878,312",
+      "pct": 0.9
+     },
+     {
+      "label": "All of Laval",
+      "value": "$872,625",
+      "pct": 0.89
+     }
+    ]
+   },
+   "body": "**MRB** = price ÷ yearly gross rents. At the same price, more rent means a lower MRB.",
+   "source": "Per Centris, last 4 quarters to Q3 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "TERM 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Operating costs come off the top",
+   "numeral": "02",
+   "photo": {
+    "file": "photos/c-131500020-025519d634.jpg",
+    "credit": "Boulevard René-Laennec, Laval · Photo: Gaétan Veillette, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Taxes, insurance, heating you pay, repairs, and an allowance for empty units. Ask for real bills, not estimates."
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "TERM 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "NOI: what the building earns",
+   "numeral": "03",
+   "body": "**Net operating income** leaves the mortgage out. It shows what the building earns on its own.",
+   "cards": [
+    {
+     "icon": "dollar",
+     "title": "Gross rents",
+     "sub": "All units, for a full year"
+    },
+    {
+     "icon": "wallet",
+     "title": "Minus costs",
+     "sub": "The list from term 2"
+    },
+    {
+     "icon": "check",
+     "title": "Equals NOI",
+     "sub": "Before any mortgage"
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "TERM 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Cap rate (TGA): NOI ÷ price",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "percent",
+     "title": "The formula",
+     "sub": "NOI ÷ price × 100"
+    },
+    {
+     "icon": "dollar",
+     "title": "Example",
+     "sub": "$40K NOI ÷ $872,625"
+    }
+   ],
+   "body": "That example gives **4.6%**. The $40K is made up, just to show the math.",
+   "source": "Price per Centris, last 4 quarters to Q3 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "TERM 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Cash flow: after the mortgage",
+   "numeral": "05",
+   "cards": [
+    {
+     "icon": "building",
+     "title": "Start with NOI",
+     "sub": "What the building earns"
+    },
+    {
+     "icon": "key",
+     "title": "Minus mortgage",
+     "sub": "Principal + interest"
+    }
+   ],
+   "body": "What's left is your **cash flow**. Ask your mortgage broker to run real payment numbers."
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Running numbers on a Laval plex? Send it.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "I'll give it to you straight, no arrogance, no fluff.",
+   "save": "Save this for your next listing"
+  }
+ ]
+}
