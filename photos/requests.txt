@@ -50,3 +50,6 @@ Auteuil Laval rivière des Mille Îles
 triplex Laval
 immeuble à revenus Laval
 plex Chomedey
+Sainte-Dorothée Laval rue résidentielle
+Saint-François Laval maisons
+Laval-Ouest Laval rue
