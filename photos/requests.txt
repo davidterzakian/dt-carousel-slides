@@ -53,3 +53,5 @@ plex Chomedey
 Sainte-Dorothée Laval rue résidentielle
 Saint-François Laval maisons
 Laval-Ouest Laval rue
+Sainte-Rose Laval residential street
+Duvernay Laval houses

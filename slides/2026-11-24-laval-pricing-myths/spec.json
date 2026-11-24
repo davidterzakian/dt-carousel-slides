@@ -1,0 +1,27 @@
+{"slides":[
+{"type":"cover","theme":"white","kicker":"LAVAL SELLER GUIDE","badge":"4 myths","icons":["dollar","home","search","chart","clock"],
+ "title":"Pricing your Laval home? Drop these 4 myths.","sub":"Real numbers from Sainte-Rose and Duvernay.",
+ "photo":{"file":"photos/c-58173728-8a511ffb92.jpg","credit":"Église Sainte-Rose-de-Lima, Laval · Photo: Pierre5018, CC BY-SA 4.0, via Wikimedia Commons","position":"center 40%"}},
+{"type":"point","theme":"white","kicker":"MYTH 1 OF 4","step":1,"steps":4,"title":"“My tax assessment is my price.”","numeral":"01",
+ "banner":{"icon":"calendar","text":"Roll values: market of July 1, 2023"},
+ "body":"Laval's **2025–2027** assessment roll reflects market conditions as of **July 1, 2023**. Buyers pay today's prices.",
+ "source":"Per Ville de Laval, 2025"},
+{"type":"point","theme":"blue","kicker":"MYTH 2 OF 4","step":2,"steps":4,"title":"“The sector median is my price.”","numeral":"02",
+ "bars":{"icon":"chart","label":"MEDIAN HOUSE PRICE · LAST 4 QUARTERS","rows":[
+   {"label":"Duvernay","value":"$723,750","pct":0.95},
+   {"label":"Sainte-Rose","value":"$650,968","pct":0.855},
+   {"label":"All of Laval","value":"$629,750","pct":0.827}]},
+ "body":"A median mixes every size and age. Compare homes like yours: same type, size and street.",
+ "source":"Per Centris, Q4 2025 to Q3 2026"},
+{"type":"point","theme":"white","kicker":"MYTH 3 OF 4","step":3,"steps":4,"title":"“Listings show what it’s worth.”","numeral":"03",
+ "photo":{"file":"photos/c-27090955-23787e2556.jpg","credit":"Parc de la Fabrique-Sainte-Rose, Laval · Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons","position":"center 50%"},
+ "body":"Sainte-Rose had **100** houses for sale and **71** sales in Q3. Asking prices are hopes. Solds are proof.",
+ "source":"Per Centris, Q3 2026"},
+{"type":"point","theme":"white","kicker":"MYTH 4 OF 4","step":4,"steps":4,"title":"“Price high, drop it later.”","numeral":"04",
+ "photo":{"file":"photos/c-54188058-b977fd3374.jpg","credit":"Centre de la nature, Duvernay, Laval · Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons","position":"center 50%"},
+ "body":"Duvernay houses sold in **27 days** on average in Q3. Start near recent solds, not above them.",
+ "source":"Per Centris, Q3 2026"},
+{"type":"cta","kicker":"YOUR NEXT STEP","title":"Curious what your Laval home could sell for?",
+ "lines":[{"icon":"message","text":"Message me here, or email"},{"icon":"mail","text":"davidterzakian@gmail.com","bold":true}],
+ "tagline":"I'll give it to you straight, no arrogance, no fluff.","save":"Save this before you list"}
+]}

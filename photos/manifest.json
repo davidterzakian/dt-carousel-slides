@@ -189,7 +189,9 @@
    "attribution_required": true,
    "reviewed": true,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-24"
+   ]
   },
   {
    "id": "c-57299313",
@@ -2095,7 +2097,9 @@
    "attribution_required": true,
    "reviewed": false,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-24"
+   ]
   },
   {
    "id": "c-27859962",
@@ -6244,7 +6248,7 @@
    "credit": "Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons",
    "attribution_required": true,
    "reviewed": false,
-   "use": true,
+   "use": false,
    "used_on": []
   },
   {
@@ -8625,7 +8629,9 @@
    "attribution_required": true,
    "reviewed": false,
    "use": true,
-   "used_on": []
+   "used_on": [
+    "2026-11-24"
+   ]
   },
   {
    "id": "c-83230739",
