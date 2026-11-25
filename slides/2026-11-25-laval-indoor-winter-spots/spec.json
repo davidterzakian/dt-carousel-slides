@@ -1,0 +1,149 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL RELOCATION GUIDE",
+   "badge": "5 spots",
+   "icons": [
+    "star",
+    "landmark",
+    "building",
+    "coffee",
+    "calendar"
+   ],
+   "title": "Cold Laval weekend? 5 indoor spots to know.",
+   "sub": "Space, science, skating and shows, all on the island.",
+   "photo": {
+    "file": "photos/c-5217835-52f6cb1d84.jpg",
+    "credit": "Cosmodôme rocket, Laval · Photo: abdallahh on Flickr, CC BY 2.0, via Wikimedia Commons",
+    "position": "center 30%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "SPOT 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "The Cosmodôme",
+   "numeral": "01",
+   "cards": [
+    {
+     "icon": "star",
+     "title": "Space museum",
+     "sub": "Interactive missions"
+    },
+    {
+     "icon": "zap",
+     "title": "4D cinema",
+     "sub": "No booking needed"
+    },
+    {
+     "icon": "clock",
+     "title": "Open all year",
+     "sub": "Check hours first"
+    }
+   ],
+   "body": "Canada's only museum devoted entirely to **space exploration**, at 2150 Autoroute des Laurentides.",
+   "source": "Per Société des musées du Québec, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "SPOT 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Health science, right next door",
+   "numeral": "02",
+   "banner": {
+    "icon": "search",
+    "text": "Musée de la santé Armand-Frappier"
+   },
+   "body": "Opened **January 2023** beside the Cosmodôme. Exhibits and hands-on labs, led by a science guide.",
+   "source": "Per Tourisme Laval, 2023 and Nov 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "SPOT 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Place Bell skates all year",
+   "numeral": "03",
+   "photo": {
+    "file": "photos/c-61620993-cba5f43ef1.jpg",
+    "credit": "Place Bell, Laval · Photo: MaxCote, CC BY-SA 4.0, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Downtown Laval's arena offers **public skating** on its community rinks year-round. Check the schedule first.",
+   "source": "Per Place Bell, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "SPOT 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "The city's arts centre",
+   "numeral": "04",
+   "cards": [
+    {
+     "icon": "building",
+     "title": "Salle Alfred-Pellan",
+     "sub": "Accredited art museum"
+    },
+    {
+     "icon": "star",
+     "title": "Théâtre des Muses",
+     "sub": "Theatre programming"
+    }
+   ],
+   "body": "**Maison des arts de Laval**, open since 1986 at 1395 boul. de la Concorde Ouest.",
+   "source": "Per Bonjour Québec, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "SPOT 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Live shows on boul. de l'Avenir",
+   "numeral": "05",
+   "chips": [
+    {
+     "icon": "star",
+     "label": "Theatre"
+    },
+    {
+     "icon": "message",
+     "label": "Comedy"
+    },
+    {
+     "icon": "waves",
+     "label": "Music"
+    }
+   ],
+   "body": "**Salle André-Mathieu** in Laval-des-Rapides hosts theatre, music and comedy at 475 boul. de l'Avenir.",
+   "source": "Per Tourisme Laval and Ville de Laval, Nov 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Moving to Laval? Ask me anything.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Think of me as the friend who happens to know Laval real estate.",
+   "save": "Save this for winter"
+  }
+ ]
+}
