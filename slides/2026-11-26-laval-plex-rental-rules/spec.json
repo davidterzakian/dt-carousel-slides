@@ -1,0 +1,151 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL INVESTOR GUIDE",
+   "badge": "5 rules",
+   "icons": [
+    "building",
+    "file",
+    "wallet",
+    "calendar",
+    "landmark"
+   ],
+   "title": "Own a Laval plex? 5 rental rules to know.",
+   "sub": "Lease, deposit and rent-increase rules, explained.",
+   "photo": {
+    "file": "photos/c-54186290-c0f94ba96c.jpg",
+    "credit": "Presqu'île Juge-Desnoyers, Pont-Viau, Laval · Photo: Richard Mc Neil, CC BY 3.0, via Wikimedia Commons",
+    "position": "center 40%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Use the official TAL lease.",
+   "numeral": "01",
+   "photo": {
+    "file": "photos/c-21497154-fd7449e3f3.jpg",
+    "credit": "Église Saint-Vincent-de-Paul, Laval · Photo: Jeangagnon, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 45%"
+   },
+   "body": "From Saint-Vincent-de-Paul to Pont-Viau, every new residential lease must use the TAL form. Mandatory since **1996**.",
+   "source": "Per Tribunal administratif du logement, Nov 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "No security deposit at signing.",
+   "numeral": "02",
+   "cards": [
+    {
+     "icon": "check",
+     "title": "Allowed",
+     "sub": "First month's rent in advance"
+    },
+    {
+     "icon": "alert",
+     "title": "Not allowed",
+     "sub": "A required security deposit"
+    }
+   ],
+   "body": "Québec's Civil Code bars any payment other than rent. A deposit is legal only if the tenant freely offers it.",
+   "source": "Per OACIQ and Éducaloi, Nov 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "RULE 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Raising rent? Mind the calendar.",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "file",
+     "title": "3–6 months",
+     "sub": "Notice before lease ends"
+    },
+    {
+     "icon": "clock",
+     "title": "1 month",
+     "sub": "Tenant's time to reply"
+    },
+    {
+     "icon": "check",
+     "title": "Silence",
+     "sub": "Counts as accepted"
+    }
+   ],
+   "body": "For a lease of **12 months or more**. A tenant who says nothing within a month has accepted.",
+   "source": "Per TAL, form TAL-810, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "If the tenant says no.",
+   "numeral": "04",
+   "banner": {
+    "icon": "clock",
+    "text": "1 month to apply to the TAL"
+   },
+   "body": "Miss that window and the lease renews at the **same rent**. The TAL's calculation method changed on Jan. 1, 2026.",
+   "source": "Per TAL and Éducaloi, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "RULE 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Price the leases, not just the plex.",
+   "numeral": "05",
+   "bars": {
+    "icon": "chart",
+    "label": "MEDIAN PLEX PRICE · LAST 4 QUARTERS",
+    "rows": [
+     {
+      "label": "All of Laval",
+      "value": "$872,625",
+      "pct": 0.95
+     },
+     {
+      "label": "Pont-Viau",
+      "value": "$802,875",
+      "pct": 0.874
+     }
+    ]
+   },
+   "body": "Current rents and lease terms come with the building. Read every lease with your notary before you offer.",
+   "source": "Per Centris, Q4 2025 to Q3 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Looking at a Laval plex? Send it to me.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your next plex"
+  }
+ ]
+}
