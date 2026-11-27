@@ -1,0 +1,155 @@
+{
+ "slides": [
+  {
+   "type": "cover",
+   "theme": "white",
+   "kicker": "LAVAL BUYER GUIDE",
+   "badge": "5 steps",
+   "icons": [
+    "handshake",
+    "file",
+    "percent",
+    "home",
+    "key"
+   ],
+   "title": "Offer accepted in Laval? 5 steps to the keys.",
+   "sub": "What happens between the yes and moving day.",
+   "photo": {
+    "file": "photos/c-31109998-5876348576.jpg",
+    "credit": "Île Paton in winter, Chomedey, Laval · Photo: Laurent Bélanger, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 45%"
+   }
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 1 OF 5",
+   "step": 1,
+   "steps": 5,
+   "title": "Clear each condition on time.",
+   "numeral": "01",
+   "cards": [
+    {
+     "icon": "search",
+     "title": "Inspection",
+     "sub": "Book it right away"
+    },
+    {
+     "icon": "percent",
+     "title": "Financing",
+     "sub": "10 days in OACIQ's example"
+    },
+    {
+     "icon": "file",
+     "title": "Documents",
+     "sub": "Read the seller's papers"
+    }
+   ],
+   "body": "From Fabreville to Chomedey, each condition has its own deadline. Miss financing, and the seller can cancel.",
+   "source": "Per OACIQ, Nov 2026"
+  },
+  {
+   "type": "point",
+   "theme": "blue",
+   "kicker": "STEP 2 OF 5",
+   "step": 2,
+   "steps": 5,
+   "title": "Pick your notary early.",
+   "numeral": "02",
+   "chips": [
+    {
+     "icon": "handshake",
+     "label": "You usually choose"
+    },
+    {
+     "icon": "file",
+     "label": "Service contract"
+    },
+    {
+     "icon": "clock",
+     "label": "Send papers early"
+    }
+   ],
+   "body": "As a rule, the buyer chooses the notary. Late documents can push back the day you get the keys.",
+   "source": "Per Éducaloi and DuProprio, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 3 OF 5",
+   "step": 3,
+   "steps": 5,
+   "title": "Get the money to the notary.",
+   "numeral": "03",
+   "cards": [
+    {
+     "icon": "bag",
+     "title": "Down payment",
+     "sub": "From you, before signing"
+    },
+    {
+     "icon": "home",
+     "title": "Mortgage funds",
+     "sub": "Sent by your lender"
+    },
+    {
+     "icon": "shield",
+     "title": "Home insurance",
+     "sub": "At least the loan amount"
+    }
+   ],
+   "body": "Funds must reach the notary before you sign. Bank clearing can take up to **10 days**.",
+   "source": "Per Éducaloi and OACIQ, Nov 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 4 OF 5",
+   "step": 4,
+   "steps": 5,
+   "title": "Two signings, a few days apart.",
+   "numeral": "04",
+   "photo": {
+    "file": "photos/c-31110001-a07568c583.jpg",
+    "credit": "Île Paton in winter, Chomedey, Laval · Photo: Laurent Bélanger, CC BY-SA 3.0, via Wikimedia Commons",
+    "position": "center 55%"
+   },
+   "body": "Sign the mortgage first, then the deed of sale. Each gets registered about **two or three days** later.",
+   "source": "Per Éducaloi, 2026"
+  },
+  {
+   "type": "point",
+   "theme": "white",
+   "kicker": "STEP 5 OF 5",
+   "step": 5,
+   "steps": 5,
+   "title": "Then watch for the welcome tax bill.",
+   "numeral": "05",
+   "photo": {
+    "file": "photos/c-22060952-3374747920.jpg",
+    "credit": "Laval City Hall, Chomedey · Photo: Bull-Doser at English Wikipedia, Public domain, via Wikimedia Commons",
+    "position": "center 60%"
+   },
+   "body": "Ville de Laval bills you after the sale. Pay before the **31st day** after it's sent, or interest starts.",
+   "source": "Per Québec.ca, Nov 2026"
+  },
+  {
+   "type": "cta",
+   "kicker": "YOUR NEXT STEP",
+   "title": "Offer accepted? Let's map your next steps.",
+   "lines": [
+    {
+     "icon": "message",
+     "text": "Message me here, or email"
+    },
+    {
+     "icon": "mail",
+     "text": "davidterzakian@gmail.com",
+     "bold": true
+    }
+   ],
+   "tagline": "Let's break this down together. No rush.",
+   "save": "Save this for your closing"
+  }
+ ]
+}
